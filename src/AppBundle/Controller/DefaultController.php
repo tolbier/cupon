@@ -6,8 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
 	/**
-	 * @Route(	"/sitio/{nombrePagina}",
-	 * 			name="pagina"
+	 * @Route(
+	 * "/sitio/{nombrePagina}",
+	 * name="pagina",
+	 * requirements={ "nombrePagina"="ayuda|privacidad|sobre_nosotros" },
 	 * )
 	 */
 	public function paginaAction($nombrePagina= 'ayuda')
