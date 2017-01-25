@@ -7,7 +7,7 @@ class DefaultController extends Controller
 {
 	/**
 	 * @Route(
-	 * "/sitio/{nombrePagina}",
+	 * "/sitio/{nombrePagina}/",
 	 * name="pagina",
 	 * requirements={ "nombrePagina"="ayuda|privacidad|sobre_nosotros" },
 	 * )
