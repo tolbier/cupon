@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
 	/**
-	 * @Route("/ayuda")
+	 * @Route("/sitio/{nombrePagina}")
 	 */
-	public function ayudaAction()
+	public function paginaAction($nombrePagina)
 	{
-		return $this->render('sitio/ayuda.html.twig');
+		return $this->render('sitio/'.$nombrePagina.'.html.twig');
 	}
 }
