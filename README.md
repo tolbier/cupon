@@ -30,3 +30,5 @@ $ symfony new cupon //última version
 ###Generar getters y setters de Doctrine
 php app/console generate:doctrine:entities AppBundle
 
+###Generar entidad
+php app/console generate:doctrine:entity
