@@ -8,7 +8,7 @@ use AppBundle\Util\Slugger;
  * Oferta
  *
  * @ORM\Table(name="oferta")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\OfertaRepository")
+ * @ORM\Entity()
  */
 class Oferta {
 	/**
@@ -75,7 +75,7 @@ class Oferta {
 	
 	/**
 	 *
-	 * @var int @ORM\Column(name="compras", type="integer")
+	 * @var int @ORM\Column(name="compras", type="integer", nullable=true)
 	 */
 	private $compras;
 	
