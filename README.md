@@ -44,3 +44,6 @@ php app/console doctrine:schema:create
 
 ###Actualizar Tablas
 php app/console doctrine:schema:update  
+
+###Instalar Fixtures
+composer require --dev doctrine/doctrine-fixtures-bundle
