@@ -61,7 +61,6 @@ class Ciudades extends AbstractFixture implements OrderedFixtureInterface
         foreach ($ciudades as $nombre) {
             $ciudad = new Ciudad();
             $ciudad->setNombre($nombre);
-
             $manager->persist($ciudad);
         }
 
