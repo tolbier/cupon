@@ -32,3 +32,15 @@ php app/console generate:doctrine:entities AppBundle
 
 ###Generar entidad
 php app/console generate:doctrine:entity
+
+###Crear Base de datos
+php app/console doctrine:database:create
+
+###Crear Tablas (mostrar sólo DUMP)
+php app/console doctrine:schema:create --dump-sql
+
+###Crear Tablas 
+php app/console doctrine:schema:create
+
+###Actualizar Tablas
+php app/console doctrine:schema:update  
