@@ -2,7 +2,7 @@
 // src/AppBundle/Entity/Ciudad.php
 namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
-
+use AppBundle\Util\Slugger;
 /**
  * @ORM\Entity
  * @ORM\Table(name="ciudad")
@@ -27,6 +27,7 @@ class Ciudad {
 	public function setNombre($nombre)
 	{
 		$this->nombre = $nombre;
+		$this->setSlug(Slugger::getSlug($nombre));
 	}
 	public function getNombre()
 	{
